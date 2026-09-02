@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delete Your Account — ExamSimplify</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto+Slab:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Roboto Slab', serif; color: #1a1a2e; background: #fff; line-height: 1.8; }
+    :root { --purple: #6B2D8B; --purple-light: #f3e8ff; --text-mid: #4a4a6a; }
+    nav {
+      background: var(--purple);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo { color: white; font-family: 'Alata', sans-serif; font-size: 1.2rem; text-decoration: none; }
+    .nav-back { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; }
+    .nav-back:hover { color: white; }
+    .content { max-width: 800px; margin: 0 auto; padding: 60px 24px; }
+    .content h1 { font-family: 'Alata', sans-serif; font-size: 2.2rem; color: var(--purple); margin-bottom: 8px; }
+    .last-updated { color: var(--text-mid); font-size: 0.9rem; margin-bottom: 48px; }
+    h2 { font-family: 'Alata', sans-serif; font-size: 1.3rem; color: #1a1a2e; margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 2px solid var(--purple-light); }
+    h3 { font-family: 'Alata', sans-serif; font-size: 1.05rem; color: var(--purple); margin: 20px 0 8px; }
+    p { color: var(--text-mid); margin-bottom: 16px; }
+    ul { color: var(--text-mid); margin: 8px 0 16px 24px; }
+    li { margin-bottom: 8px; }
+    a { color: var(--purple); }
+    .highlight { background: var(--purple-light); border-left: 4px solid var(--purple); padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 20px 0; }
+    .warning { background: #fff5f5; border-left: 4px solid #e53e3e; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 20px 0; }
+    .warning p { color: #c53030; margin-bottom: 0; }
+    .btn-delete {
+      display: inline-block;
+      background: #e53e3e;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 100px;
+      font-family: 'Alata', sans-serif;
+      font-size: 1rem;
+      text-decoration: none;
+      margin-top: 8px;
+      transition: background 0.2s;
+    }
+    .btn-delete:hover { background: #c53030; color: white; }
+    .step {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 24px;
+    }
+    .step-number {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      background: var(--purple);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Alata', sans-serif;
+      font-size: 1rem;
+      margin-top: 2px;
+    }
+    .step-body p { margin-bottom: 6px; }
+    footer { background: #1a1a2e; color: rgba(255,255,255,0.6); text-align: center; padding: 24px; font-size: 0.85rem; margin-top: 60px; }
+    footer a { color: rgba(255,255,255,0.8); }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo">ExamSimplify</a>
+    <a href="index.html" class="nav-back">← Back to Home</a>
+  </nav>
+
+  <div class="content">
+    <h1>Delete Your Account</h1>
+    <p class="last-updated">Last updated: September 2026</p>
+
+    <div class="highlight">
+      <p>You have the right to delete your ExamSimplify account and all associated personal data at any time. This page explains how to submit a deletion request and what happens to your data.</p>
+    </div>
+
+    <h2>How to Request Account Deletion</h2>
+    <p>You can request account deletion through either of the following options:</p>
+
+    <div class="step">
+      <div class="step-number">1</div>
+      <div class="step-body">
+        <h3>Email Us</h3>
+        <p>Send an email to <a href="mailto:support@examsimplify.com">support@examsimplify.com</a> with the subject line <strong>Account Deletion Request</strong> and include your registered email address in the message body.</p>
+        <p>Use the button below to send a pre-filled request:</p>
+        <a
+          href="mailto:support@examsimplify.com?subject=Account%20Deletion%20Request&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20the%20deletion%20of%20my%20ExamSimplify%20account.%0A%0ARegistered%20email%20address%3A%20%5BYour%20email%20here%5D%0A%0APlease%20confirm%20once%20my%20account%20and%20data%20have%20been%20deleted.%0A%0AThank%20you."
+          class="btn-delete"
+        >Delete Account Request</a>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">2</div>
+      <div class="step-body">
+        <h3>Contact Us In-App</h3>
+        <p>Open the ExamSimplify app, tap the <strong>support icon</strong> and send us a message requesting account deletion. Include your registered email address so we can locate and remove your account.</p>
+      </div>
+    </div>
+
+    <h2>What Data Is Deleted</h2>
+    <p>Upon account deletion, the following personal data is permanently removed:</p>
+    <ul>
+      <li>Your full name, email address and profile information</li>
+      <li>All exam results and score history</li>
+      <li>Bookmarked and saved questions</li>
+      <li>Subscription and payment records (transaction references)</li>
+      <li>Device information and login history</li>
+      <li>Push notification tokens</li>
+      <li>All other personally identifiable information associated with your account</li>
+    </ul>
+
+    <h2>What Data Is Retained</h2>
+    <p>After deletion, we retain the following for a limited period:</p>
+    <ul>
+      <li><strong>Anonymised usage statistics</strong> — aggregated, non-identifiable data retained for up to 90 days for internal analytics and legal compliance. This data cannot be linked back to you.</li>
+    </ul>
+
+    <h2>Deletion Timeline</h2>
+    <div class="highlight">
+      <p>Your account deletion request will be processed within <strong>30 days</strong> of receipt. You will receive a confirmation email once your account and data have been permanently deleted.</p>
+    </div>
+
+    <h2>Things to Know Before You Delete</h2>
+    <div class="warning">
+      <p><strong>Account deletion is permanent and cannot be undone.</strong> Once deleted, your exam history, progress and saved questions cannot be recovered.</p>
+    </div>
+    <ul>
+      <li>Active subscriptions are not automatically cancelled — please cancel your subscription through Google Play before requesting deletion to avoid future charges</li>
+      <li>If you have a pending subscription refund, please resolve this before submitting a deletion request</li>
+      <li>You can create a new account at any time after deletion</li>
+    </ul>
+
+    <h2>Contact Us</h2>
+    <p>If you have any questions about account deletion or your personal data, please contact us:</p>
+    <ul>
+      <li>Email: <a href="mailto:support@examsimplify.com">support@examsimplify.com</a></li>
+      <li>Privacy policy: <a href="privacy.html">examsimplify.com/privacy</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>© 2026 ExamSimplify · <a href="index.html">Home</a> · <a href="privacy.html">Privacy Policy</a> · <a href="mailto:support@examsimplify.com">support@examsimplify.com</a></p>
+    <p style="margin-top:8px;font-style:italic">Prepare. Practice. Pass.</p>
+  </footer>
+</body>
+</html>
