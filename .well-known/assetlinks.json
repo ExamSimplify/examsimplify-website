@@ -1,0 +1,26 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.examsimplify.app",
+    "sha256_cert_fingerprints": [
+      "FD:E2:3D:79:98:C5:13:2C:2E:00:06:70:5C:A1:11:B2:BA:12:9A:8E:63:FF:0E:54:B1:19:13:57:69:DA:A7:F7",
+      "CE:99:03:BB:23:95:02:29:1E:C4:60:8C:E7:17:8A:E6:46:46:9F:37",
+      "28:87:EF:DF:F3:A9:5B:6D:EA:C9:B9:38:B4:4B:A6:05:E3:DD:0D:2D",
+      "80:C1:62:F7:88:63:94:C0:C2:5D:42:F2:A3:5C:E8:DB:32:AF:76:3C"
+    ]
+  }
+},
+{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.examsimplify.app.dev",
+    "sha256_cert_fingerprints": [
+      "7B:11:22:EB:76:21:0F:83:CC:BD:C3:CE:34:76:70:17:B2:08:B9:86:88:6A:57:26:37:01:40:5F:9B:EC:23:9F",
+      "7B:1B:32:CB:13:45:C9:1E:BA:51:6D:89:80:99:57:DA:3F:E7:0F:0A",
+      "4A:4F:11:7A:F6:54:57:B3:49:EF:E2:0B:B2:1A:88:BA:13:EA:4D:82:5B:D8:10:47:42:30:8E:84:2C:C0:5D:4E",
+      "33:11:A7:72:F1:30:D0:D2:DA:89:C0:20:3D:5B:88:86:26:44:2A:07:B8:45:AC:10:C9:AE:AF:BF:4F:20:D8:69"
+    ]
+  }
+}]
