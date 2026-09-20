@@ -530,6 +530,8 @@
       box-shadow: var(--shadow);
       border: 2px solid transparent;
       transition: all 0.2s;
+      display: flex;
+      flex-direction: column;
       position: relative;
     }
     .pricing-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
@@ -577,6 +579,7 @@
       gap: 10px;
     }
     .pricing-card.featured .pricing-features li { border-color: rgba(255,255,255,0.1); }
+    .pricing-card .btn { margin-top: auto; }
     .check { color: var(--success); font-size: 1.1rem; }
     .pricing-card.featured .check { color: var(--gold); }
     .cross { color: #ccc; }
