@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    (function () {
+      var m = window.location.pathname.match(/^\/(v|r)\/([A-Za-z0-9_-]{8})$/);
+      if (m) {
+        window.location.replace('https://api.examsimplify.com/s/' + m[1] + '/' + m[2]);
+      }
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found — ExamSimplify</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Roboto Slab', serif;
+      background: linear-gradient(135deg, #4e1f66, #6B2D8B);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 48px 40px;
+      max-width: 440px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 32px 80px rgba(0,0,0,0.3);
+    }
+    .logo { font-family: 'Alata', sans-serif; font-size: 1.4rem; color: #6B2D8B; margin-bottom: 8px; }
+    .icon { font-size: 3rem; margin-bottom: 16px; }
+    h1 { font-family: 'Alata', sans-serif; font-size: 1.6rem; color: #1a1a2e; margin-bottom: 12px; }
+    p { color: #4a4a6a; font-size: 0.95rem; line-height: 1.7; margin-bottom: 24px; }
+    .btn {
+      display: inline-block;
+      background: #6B2D8B;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 100px;
+      font-family: 'Alata', sans-serif;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #4e1f66; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">ExamSimplify</div>
+    <div class="icon">🔍</div>
+    <h1>Page Not Found</h1>
+    <p>The page you're looking for doesn't exist or has been moved.</p>
+    <a href="/" class="btn">Go to Homepage</a>
+  </div>
+</body>
+</html>
