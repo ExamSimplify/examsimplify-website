@@ -221,34 +221,36 @@
         return;
       }
 
+      if (password.length < 6 || password.length > 64) {
+        msgEl.textContent = 'Password must be between 6 and 64 characters.';
+        msgEl.className = 'msg-error';
+        return;
+      }
+
       submitBtn.disabled = true;
       submitBtn.textContent = 'Resetting...';
 
       try {
-        const response = await fetch('https://backend-production-8424.up.railway.app/updatePassword', {
+        const response = await fetch('https://api.examsimplify.com/updatePassword', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ password, confPassword: confirm, token })
         });
-        const text = await response.text();
-        if (response.ok && text.toLowerCase().includes('success')) {
+        const data = await response.json();
+        if (response.ok && data.success === true) {
           msgEl.textContent = 'Your password has been reset successfully. You can now log in to ExamSimplify.';
           msgEl.className = 'msg-success';
-          document.getElementById('fallback-form').querySelectorAll('input, button').forEach(el => el.disabled = true);
         } else {
-          let errorMsg = text;
-          try { errorMsg = JSON.parse(text).message || text; } catch (_) {}
-          msgEl.textContent = errorMsg || 'Reset failed. The link may have expired. Please request a new one from the app.';
+          msgEl.textContent = data.message || 'Reset failed. The link may have expired. Please request a new one from the app.';
           msgEl.className = 'msg-error';
-          submitBtn.disabled = false;
-          submitBtn.textContent = 'Reset Password';
         }
       } catch (err) {
         msgEl.textContent = 'Unable to connect. Please check your connection and try again.';
         msgEl.className = 'msg-error';
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Reset Password';
       }
+
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Reset Password';
     }
   </script>
 </body>
